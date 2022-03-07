@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.wrap {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #222222;
+    color: #E8E8E8;
+}
+
+.header-search, .header-menu{
+    background-color: transparent;
+    border: none;    
+}
+
+.wrap-header {
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left-header, .right-header{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.promo {
+    background-color: #F1E4E6;
+    color: #222222;
+}
+
+.wrap-promo{
+    background-image: url(../img/promo.png);
+    background-repeat: no-repeat;
+    background-position-x: -225px;
+    min-height: 765px;
+}
+
+
+.title-promo{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222
+}
+
+.content {
+    background-color: #E5E5E5;
+    color: #222222;
+    flex-grow: 1;
+}
+
+.wrap-content{
+    padding: 65px 0 100px 0;
+}
+
+.advantages {
+    background-color: #222224;
+    color: #FBFBFB;
+}
+
+.wrap-advantages{
+    padding: 100px 0;
+}
+
+.feedback {
+    background-color: rgba(244, 244, 244, 0.7);
+    color: #222224;
+}
+
+.wrap-feedback{
+    padding: 90px 0 130px 0;
+}
+
+.footer {
+    background-color: #222224;
+    color: #FBFBFB;
+}
+
+.wrap-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright{
+    font-size: 16px;
+    line-height: 19px;
+}
