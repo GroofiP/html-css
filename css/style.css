@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -46,15 +51,34 @@ body {
     background-repeat: no-repeat;
     background-position-x: -225px;
     min-height: 765px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
 }
 
 
 .title-promo{
     font-weight: 900;
     font-size: 48px;
-    line-height: 58px;
-    color: #222222
+    line-height: 58px; 
+    color: #222222;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-right: 90px;
 }
+
+.title-promo--smile{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 28px; 
+}
+
+.title-promo--pink{
+    color: rgba(241, 109, 127, 1);
+
+}
+
 
 .content {
     background-color: #E5E5E5;
@@ -64,6 +88,59 @@ body {
 
 .wrap-content{
     padding: 65px 0 100px 0;
+}
+
+.wrap-categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.categories-item{
+    background-color: #C4C4C4;
+    width: 360px;
+    height: 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.categories-item--women{
+    background-image: url("../img/women.jpg");
+    background-repeat: no-repeat;
+}
+
+.categories-item--men{
+    background-image: url("../img/men.jpg");
+    background-repeat: no-repeat;
+}
+
+.categories-item--kids{
+    background-image: url("../img/kids.jpg");
+    background-repeat: no-repeat;
+}
+
+.categories-item--accesories{
+    background-image: url("../img/accesories.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+}
+
+.categories-sale{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color:#FFFFFF;
+}
+
+.categories-name{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #F16D7F;
 }
 
 .advantages {
