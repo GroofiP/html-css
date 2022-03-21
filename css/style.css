@@ -179,6 +179,10 @@ body {
     padding: 20px;
 }
 
+.item-text a{
+    text-decoration: none;
+}
+
 .item-title{
     font-size: 13px;
     font-weight: 400;
@@ -453,4 +457,34 @@ body {
 
 .pagination-item--active{
     color:#EF5B70;
+}
+
+/* 3 страница */
+
+.slide{
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+}
+
+.slide-button{
+    border: none;
+    padding: 8px;
+    background-color: #E1E1E1;
+    text-decoration: none;  
+}
+
+.wrap-slide{
+    padding: 11px 0 42px;
+    text-align: center;
+}
+
+.wrap-content--product{
+    padding: 36px 0 128px;
+    
+}
+
+.product{
+    margin-bottom: 36px;
+    border: 1px solid grey;
 }
