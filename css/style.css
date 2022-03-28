@@ -23,6 +23,16 @@ body {
     color: #E8E8E8;
 }
 
+.header-icon svg{
+    fill: #F8F8F8;
+
+}
+
+.header-icon:hover svg{
+    fill: #F16D7F;
+
+}
+
 .header-search, .header-menu{
     background-color: transparent;
     border: none;    
@@ -219,6 +229,11 @@ body {
     text-decoration: none;
 }
 
+.items-all--button:hover{
+    color: #fff;
+    background-color: #F16D7F;
+}
+
 .advantages {
     background-color: #222224;
     color: #FBFBFB;
@@ -335,6 +350,24 @@ body {
 .footer {
     background-color: #222224;
     color: #FBFBFB;
+}
+
+.social-item{
+    color: #222;
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.social-item:hover{
+    color: #fff;
+    background-color: #F16D7F;
 }
 
 .wrap-footer{
