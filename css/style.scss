@@ -2,6 +2,7 @@
 
 $color-main: #F16D7F;
 $space: 65px;
+$time-color: 0.25s;
 
 *{
   margin: 0;
@@ -26,10 +27,20 @@ body {
 .header {
   background-color: #222222;
   color: #E8E8E8;
+
+}
+
+.header-icon-logo{
+  transition: transform $time-color;
+}
+
+.header-icon-logo:hover{
+  transform: scale(1.1);
 }
 
 .header-icon svg{
   fill: #F8F8F8;
+  transition: background-color $time-color, fill $time-color;
 
 }
 
@@ -222,6 +233,7 @@ body {
   font-weight: 400;
   line-height: 16px;
   color: rgba(0, 0, 0, 1);
+  transition: background-color $time-color, color $time-color;
 }
 .item-title:hover{
   color: $color-main;
@@ -232,6 +244,7 @@ body {
   line-height: 17px;
   padding: 15px 0;
   color: rgba(93, 93, 93, 1);
+
 }
 
 .item-price{
@@ -243,23 +256,40 @@ body {
 }
 
 .items-all{
+  margin-top: 50px;
   text-align: center;
   padding-top: 65px;
+  transition: transform $time-color;
 }
 
 .items-all--button{
-  border: 1px solid rgba(255, 106, 106, 1);
-  color: rgba(242, 99, 118, 1);
+  cursor: pointer;
+  border: none;
   padding: 15px 40px;
-  margin-top: 50px;
-  background-color: #FFFFFF;
+  font-family: inherit;
+  display: inline-block;
   text-decoration: none;
+  outline: 1px solid rgba(255, 106, 106, 1);
+  transition: background-color $time-color;
+}
+
+.items-all--button span{
+  color: rgba(242, 99, 118, 1);
+  background-color: #FFFFFF;
+  transition: background-color $time-color, color $time-color, transform $time-color, border-radius $time-color;
+  display: block;
 }
 
 .items-all--button:hover{
-  color: #fff;
   background-color: $color-main;
 }
+
+.items-all--button:hover span{
+  transform: rotate(360deg);
+  color: #fff;
+  background-color: $color-main;
+  border-radius: 8px;
+} 
 
 .advantages {
   background-color: #222224;
@@ -389,6 +419,7 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  transition: background-color $time-color, color $time-color;
 }
 
 
@@ -447,15 +478,17 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
+  
 }
 
 .bread-link{
   text-decoration: none;
   color: #636363;
+  transition: color 0.5s;
 }
 
 .bread-link::before{
-  content: " / ";
+  content: "  /  ";
   text-decoration: none;
   color: #636363;
   font-weight: 300;
@@ -468,9 +501,10 @@ body {
 .bread--pink{
   font-weight: 700;
   color: rgba(241, 109, 127, 1);
+  
 }
 
-.link-light:hover{
+.bread-link:hover{
   font-weight: 700;
   color: #222222;
 }
@@ -529,6 +563,7 @@ body {
   font-weight: 300;
   line-height: 19px;
   color: rgba(111, 110, 110, 1);
+  transition: background-color $time-color, color $time-color;
 }
 
 .pagination-item--active{
@@ -537,6 +572,7 @@ body {
 
 .pagination-item svg{
   fill: black;
+  transition: fill $time-color;
 }
 
 .pagination-item:hover svg{
@@ -564,10 +600,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: black;
   font-size: 16px;
   background-color: #E1E1E1;
   text-decoration: none;  
+}
+
+.slide-button svg{
+  fill: black;
+  transition: fill $time-color;
 }
 
 .slide-button:hover svg{
