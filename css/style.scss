@@ -458,6 +458,7 @@ body {
   content: " / ";
   text-decoration: none;
   color: #636363;
+  font-weight: 300;
 }
 
 .bread-link:first-child::before {
@@ -469,7 +470,7 @@ body {
   color: rgba(241, 109, 127, 1);
 }
 
-.bread-link:hover{
+.link-light:hover{
   font-weight: 700;
   color: #222222;
 }
@@ -604,8 +605,21 @@ body {
   font-weight: 300;
   line-height: 17px;
   color: $color-main;
-  border-bottom: 3px solid $color-main;
-  padding-bottom: 12px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.product-title::after{
+  content: "";
+  position:absolute;
+  background-color: $color-main;
+  width: 63px;
+  height: 3px;
+  display: block;
+  margin: 0 auto;
+  bottom: -3px;
+  left: 0;
+  right: 0;
 }
 
 .product-subtitle{
