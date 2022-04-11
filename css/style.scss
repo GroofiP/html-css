@@ -1037,16 +1037,14 @@ body {
   .subscribe{
     max-width: 375px;
   }
-}
 
-@media (max-width: 1200px) {
-  .wrap {
-    width: 767px;
+  .wrap-footer{
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  .wrap-promo {
-    min-height: 365px;
-    background-size: 50%;
-    background-position-x: -25px;
+  .right-footer{
+    padding: 40px 0;
   }
+
 }

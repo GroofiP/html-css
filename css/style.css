@@ -1213,16 +1213,17 @@ body {
   .subscribe {
     max-width: 375px;
   }
-}
-
-@media (max-width: 1200px) {
-  .wrap {
-    width: 767px;
+  .wrap-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-  .wrap-promo {
-    min-height: 365px;
-    background-size: 50%;
-    background-position-x: -25px;
+  .right-footer {
+    padding: 40px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
