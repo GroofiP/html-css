@@ -687,6 +687,10 @@ body {
   padding: 13px;
 }
 
+.filter-main--title::before{
+  content: "FILTER";
+}
+
 .filter-main--title svg{
   fill:black;
 }
@@ -1126,6 +1130,22 @@ body {
     z-index: 5;
     padding-left: 75px;
     position: absolute;
+  }
+
+  .filter-product{
+    padding: 0;
+  }
+
+  .filter-other--product{
+    padding-left: 0 !important;
+  }
+
+  .items-all--padding{
+    margin-top: 115px;
+  }
+
+  .filter-main--title::before{
+    content: "";
   }
 
 }
